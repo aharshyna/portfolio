@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
 
@@ -43,33 +43,101 @@
   </head>
 
   <body>
-    <main class="screen screen__about-me">
+    <main class="page">
       <nav class="navigation">
-        <a href="./index.html" class="text-link text-link_active">about me</a>
-        <img src="./assets/images/logo.png" alt="Anna Harshyna" class="logo" />
-        <a href="./my-projects.html" class="text-link">my projects</a>
+        <a><img src="./assets/images/logo.png" class="navigation__logo" /></a>
+        <ul class="navigation__list">
+          <li><a href="#about" class="navigation__list-item">About</a></li>
+          <li>
+            <a href="#projects" class="navigation__list-item">Projects</a>
+          </li>
+          <li>
+            <a href="#contacts" class="navigation__list-item">Contacts</a>
+          </li>
+        </ul>
       </nav>
 
-      <div class="content">
-        <section class="about-me">
-          <div class="about-me__photo-container">
-            <img
-              src="./assets/images/me.png"
-              alt="Anna Harshyna"
-              class="about-me__photo"
-            />
+      <section id="about" class="about">
+        <div class="about__content">
+          <img src="./assets/images/me.png" class="about__image" />
+
+          <div class="about__text-block">
+            <h1>Hey there! 👋</h1>
+            <h3>
+              I'm Anna Harshyna, a front-end developer based in Kyiv, Ukraine.
+            </h3>
+
+            <ul class="about__links">
+              <li>
+                <a href="https://github.com/aharshyna" target="_blank"
+                  ><img src="./assets/icons/github.svg" />
+                </a>
+              </li>
+              <li>
+                <a
+                  href="https://www.linkedin.com/in/anna-harshyna/"
+                  target="_blank"
+                  ><img src="./assets/icons/linkedin.svg" />
+                </a>
+              </li>
+            </ul>
           </div>
+        </div>
 
-          <p class="about-me__text">Hey there 👋</p>
+        <div class="about__tech-stack">
+          <p>My tech stack:</p>
+          <ul class="about__tech-stack__list">
+            <li><img src="https://skillicons.dev/icons?i=html,css" /></li>
+            <li><img src="https://skillicons.dev/icons?i=js,ts" /></li>
+            <li>
+              <img src="https://skillicons.dev/icons?i=nodejs,react,graphql" />
+            </li>
+            <li>
+              <img
+                src="https://skillicons.dev/icons?i=materialui,tailwind,sass"
+              />
+            </li>
+          </ul>
+        </div>
+      </section>
 
-          <p class="about-me__text">
-            My name is Anna and I'm a front-end developer with 2+ years of
-            commercial experience in software development.
-          </p>
+      <section id="projects" class="projects">
+        <h2>My personal projects 👩‍💻</h2>
+        <p>
+          Despite my job responsibilities, I enjoy working on my own projects.
+          Here are some of them
+        </p>
 
-          <p class="about-me__text">
-            I like coding 👩🏻‍💻, running 🏃🏻‍♀️ and coffee ☕️
-          </p>
+        <div class="projects_list">
+          <div class="project__card">
+            <div class="project__card__content"></div>
+            <img />
+          </div>
+        </div>
+      </section>
+
+      <section id="contacts" class="contacts">
+        <h2>Reach out to me 🤝</h2>
+
+        <div class="contacts__content">
+          <div class="contacts__email">
+            <div class="contacts__email-icon-wrapper">
+              <img
+                src="./assets/icons/email.svg"
+                class="contacts__email-icon"
+              />
+            </div>
+
+            <div class="contacts__email__text">
+              <p class><b>Email</b></p>
+              <a
+                href="mailto:anna.harshyna@gmail.com"
+                target="_blank"
+                class="social-links__link"
+                ><p>anna.harshyna@gmail.com</p>
+              </a>
+            </div>
+          </div>
 
           <a
             href="./assets/files/resume.pdf"
@@ -79,55 +147,8 @@
             <p class="about_me__download-resume-text">Download my resume</p>
             <img src="./assets/icons/arrow.svg" />
           </a>
-        </section>
-
-        <div class="social-links">
-          <a
-            href="https://github.com/aharshyna"
-            target="_blank"
-            class="social-links__link"
-          >
-            <img
-              src="./assets/icons/github.svg"
-              atl="GitHub"
-              class="social-links__image"
-            />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/anna-harshyna/"
-            target="_blank"
-            class="social-links__link"
-          >
-            <img
-              src="./assets/icons/linkedin.svg"
-              atl="LinkedIn"
-              class="social-links__image"
-            />
-          </a>
-          <a
-            href="mailto:anna.harshyna@gmail.com"
-            target="_blank"
-            class="social-links__link"
-          >
-            <img
-              src="./assets/icons/gmail.svg"
-              atl="Telegram"
-              class="social-links__image"
-            />
-          </a>
-          <a
-            href="https://t.me/aniaharshyna"
-            target="_blank"
-            class="social-links__link"
-          >
-            <img
-              src="./assets/icons/telegram.svg"
-              atl="Telegram"
-              class="social-links__image"
-            />
-          </a>
         </div>
-      </div>
+      </section>
     </main>
   </body>
 </html>
