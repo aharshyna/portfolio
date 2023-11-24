@@ -1,0 +1,43 @@
+.about {
+    height: 100vh;
+    background: $primary-bg-color;
+
+    &__content {
+        display: flex;
+        gap: 5rem;
+        padding-top: 120px;
+        margin-bottom: 6rem;
+        max-width: 900px;
+        margin-right: auto;
+        margin-left: auto;
+      }
+  
+      &__image {
+        width: 380px;
+     height: 380px;
+     border-radius: 50%;
+     box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+     }
+ 
+     &__text-block {
+        display: flex;
+        flex-direction: column;
+     }
+ 
+     &__links {
+         display: flex;
+       gap: 1rem;
+         margin-top: 2rem;
+     }
+
+
+     &__tech-stack {
+        @include flexCenter(row);
+
+        &__list {
+            display: flex;
+            gap: 3rem;
+            margin-left: 2rem;
+          }
+      }
+  }

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Anna Harshyna</title>
+    <title>Anna Harshyna | Front-end developer</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -12,8 +12,7 @@
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" type="text/css" href="./css/styles.css" />
-    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/main.css" />
 
     <link
       rel="apple-touch-icon"
@@ -43,20 +42,25 @@
   </head>
 
   <body>
-    <main class="page">
-      <nav class="navigation">
-        <a><img src="./assets/images/logo.png" class="navigation__logo" /></a>
-        <ul class="navigation__list">
-          <li><a href="#about" class="navigation__list-item">About</a></li>
+    <header>
+      <div class="menu-btn"><span class="menu-btn__burger"></span></div>
+
+      <nav class="nav">
+        <a><img src="./assets/images/logo.png" class="nav__logo" /></a>
+
+        <ul class="menu-nav">
+          <li><a href="#about" class="menu-nav__item">About</a></li>
           <li>
-            <a href="#projects" class="navigation__list-item">Projects</a>
+            <a href="#projects" class="menu-nav__item">Projects</a>
           </li>
           <li>
-            <a href="#contacts" class="navigation__list-item">Contacts</a>
+            <a href="#contacts" class="menu-nav__item">Contacts</a>
           </li>
         </ul>
       </nav>
+    </header>
 
+    <main>
       <section id="about" class="about">
         <div class="about__content">
           <img src="./assets/images/me.png" class="about__image" />
@@ -70,14 +74,14 @@
             <ul class="about__links">
               <li>
                 <a href="https://github.com/aharshyna" target="_blank"
-                  ><img src="./assets/icons/github.svg" />
+                  ><i class="fab fa-github fa-2x"></i>
                 </a>
               </li>
               <li>
                 <a
                   href="https://www.linkedin.com/in/anna-harshyna/"
                   target="_blank"
-                  ><img src="./assets/icons/linkedin.svg" />
+                  ><i class="fab fa-linkedin fa-2x"></i>
                 </a>
               </li>
             </ul>
@@ -120,20 +124,16 @@
         <h2>Reach out to me 🤝</h2>
 
         <div class="contacts__content">
-          <div class="contacts__email">
-            <div class="contacts__email-icon-wrapper">
-              <img
-                src="./assets/icons/email.svg"
-                class="contacts__email-icon"
-              />
+          <div class="contacts__content__email">
+            <div class="contacts__content__email-icon-wrapper">
+              <span class="contacts__content__email-icon">
+                <i class="fa-solid fa-envelope fa-xl"></i>
+              </span>
             </div>
 
-            <div class="contacts__email__text">
+            <div>
               <p class><b>Email</b></p>
-              <a
-                href="mailto:anna.harshyna@gmail.com"
-                target="_blank"
-                class="social-links__link"
+              <a href="mailto:anna.harshyna@gmail.com" target="_blank"
                 ><p>anna.harshyna@gmail.com</p>
               </a>
             </div>
@@ -142,13 +142,21 @@
           <a
             href="./assets/files/resume.pdf"
             download="Anna Harshyna Resume"
-            class="about_me__download-resume"
+            class="contacts__content__download-resume"
           >
-            <p class="about_me__download-resume-text">Download my resume</p>
-            <img src="./assets/icons/arrow.svg" />
+            <p class="contacts__content__download-resume__text">
+              Download my resume
+            </p>
+            <span><i class="fa-solid fa-arrow-down"></i></span>
           </a>
         </div>
       </section>
     </main>
+
+    <script
+      src="https://kit.fontawesome.com/b275b83de6.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="index.js"></script>
   </body>
 </html>

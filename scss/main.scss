@@ -1,0 +1,43 @@
+@import 'config';
+@import 'menu';
+@import 'responsive';
+@import 'about';
+@import 'projects';
+@import 'contacts';
+
+body {
+    color: $primary-text-color;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.15rem;
+  line-height: 1.4;
+  font-weight: 400;
+}
+
+h1 {
+    font-size: 3.5rem;
+  }
+  
+  h2 {
+    font-size: 2rem;
+    margin-bottom: 32px;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+    font-weight: 400;
+  }
+  
+  a {
+    color: $primary-text-color;
+    text-decoration: none;
+  }
+
+  section {
+    padding: 36px;
+  }
+
+  ul {
+    list-style-type: none;
+  }
+  
+  
